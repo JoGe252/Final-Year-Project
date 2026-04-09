@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin Dashboard | Cloud Resume</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="admin.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div>
+        <h1>Admin Dashboard</h1>
+        <p class="tagline">Prototype monitoring view for Cloud Resume project</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Metric cards -->
+    <section class="card">
+      <h2>Overview</h2>
+      <div class="skill-grid">
+        <div class="card">
+          <h3>Total Visitors</h3>
+          <p id="metric-visitors">Loading...</p>
+        </div>
+        <div class="card">
+          <h3>Feedback Count</h3>
+          <p id="metric-feedback">Loading...</p>
+        </div>
+        <div class="card">
+          <h3>Positive Sentiment %</h3>
+          <p id="metric-positive">Loading...</p>
+        </div>
+        <div class="card">
+          <h3>Active Alerts</h3>
+          <p id="metric-alerts">Loading...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alerts -->
+    <section class="card">
+      <h2>Recent Alerts</h2>
+      <div id="alerts-list">Loading...</div>
+    </section>
+
+    <!-- Sentiment breakdown -->
+    <section class="card">
+      <h2>Sentiment Breakdown</h2>
+
+      <p>Positive</p>
+      <div class="bar-container"><div id="bar-positive" class="bar-fill"></div></div>
+
+      <p>Neutral</p>
+      <div class="bar-container"><div id="bar-neutral" class="bar-fill"></div></div>
+
+      <p>Negative</p>
+      <div class="bar-container"><div id="bar-negative" class="bar-fill"></div></div>
+
+      <p>Mixed</p>
+      <div class="bar-container"><div id="bar-mixed" class="bar-fill"></div></div>
+    </section>
+
+    <!-- Feedback table -->
+    <section class="card">
+      <h2>Feedback Records</h2>
+      <div style="overflow-x:auto;">
+        <table id="feedback-table" border="1" cellpadding="8" cellspacing="0" width="100%">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Message</th>
+              <th>Sentiment</th>
+              <th>Confidence</th>
+              <th>Timestamp</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="6">Loading...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

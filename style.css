@@ -1,0 +1,353 @@
+/* ===========================
+   GLOBAL STYLES
+   =========================== */
+
+/* Base color theme, font, and spacing */
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  color: #111827; /* Dark gray text */
+  background-color: #f3f4f6; /* Light gray background */
+}
+
+/* Apply consistent box sizing to all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margin for body */
+body {
+  margin: 0;
+}
+
+/* Reusable container that centers content */
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* ===========================
+   HEADER STYLING
+   =========================== */
+
+.site-header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.08);
+  padding: 1.75rem 0;
+  margin-bottom: 1.5rem;
+}
+
+/* Aligns header content in a flexbox for name + visitor box */
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+/* Big name at top */
+h1 {
+  font-size: 2rem;
+  margin: 0 0 0.25rem;
+}
+
+/* Subtitle / tagline under name */
+.tagline {
+  margin: 0 0 0.75rem;
+  color: #6b7280; /* Muted gray */
+  font-size: 0.95rem;
+}
+
+/* Contact info in the header */
+.header-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+/* Links inside header contact */
+.header-contact a {
+  color: #2563eb; /* Blue */
+  text-decoration: none;
+}
+
+.header-contact a:hover {
+  text-decoration: underline;
+}
+
+/* Visitor counter box style */
+.visitor-box {
+  min-width: 90px;
+  padding: 0.6rem 0.85rem;
+  border-radius: 12px;
+  background-color: #111827; /* Dark box */
+  color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Label text (small, uppercase) */
+.visitor-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.8;
+}
+
+/* Counter number style */
+.visitor-number {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* ===========================
+   CARD / SECTION STYLING
+   =========================== */
+
+.card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 1.25rem 1.4rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 6px rgba(15, 23, 42, 0.06);
+}
+
+/* Section titles (e.g. "About Me", "Skills") */
+.card h2 {
+  margin: 0 0 0.8rem;
+  font-size: 1.2rem;
+  color: #111827;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.4rem;
+}
+
+/* ===========================
+   SKILLS GRID
+   =========================== */
+
+/* Create responsive columns for skills */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+/* Subheadings for skill categories */
+.skill-grid h3 {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  color: #111827;
+}
+
+/* Bullet points inside skill list */
+.skill-grid ul {
+  margin: 0;
+  padding-left: 1.05rem;
+  font-size: 0.9rem;
+}
+
+/* ===========================
+   EXPERIENCE / PROJECTS ITEMS
+   =========================== */
+
+.item {
+  margin-bottom: 0.9rem;
+}
+
+/* Header inside each job/project card */
+.item-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem;
+}
+
+/* Job or project title */
+.item-header h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Dates and company info */
+.item-meta {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+/* Bullet points for responsibilities or features */
+.item ul {
+  margin: 0.25rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+}
+
+/* ===========================
+   CONTACT & LINKS
+   =========================== */
+
+#contact p {
+  margin: 0.15rem 0;
+  font-size: 0.9rem;
+}
+
+/* General link color */
+a {
+  color: #2563eb;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+.site-footer {
+  padding: 1.5rem 0 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+/* ===========================
+   MOBILE RESPONSIVENESS
+   =========================== */
+
+@media (max-width: 600px) {
+  /* Slightly smaller name on small screens */
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  /* Visitor counter aligns better on mobile */
+  .visitor-box {
+    align-self: flex-start;
+  }
+}
+
+/* === DARK MODE TOGGLE === */
+.theme-toggle {
+  margin-left: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+body.dark-mode .card {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+body.dark-mode .site-header,
+body.dark-mode .site-footer {
+  background-color: #1f2937;
+}
+
+/* === BACK TO TOP BUTTON === */
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  background: #2563eb;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px);
+}
+
+/* === DOWNLOAD CV BUTTON === */
+.btn-download {
+  background: #10b981;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.btn-download:hover {
+  opacity: 0.9;
+}
+
+/* === CONTACT FORM === */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font: inherit;
+}
+
+#contact-form button {
+  background: #2563eb;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  opacity: 0.9;
+}
+
+.form-feedback {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+
+.bar-container {
+  width: 100%;
+  background: #ddd;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  height: 20px;
+}
+
+.bar-fill {
+  height: 20px;
+  width: 0;
+  background: steelblue;
+  border-radius: 8px;
+  transition: width 0.4s ease;
+}

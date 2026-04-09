@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Joel George | Cloud Resume</title>
+
+  <!-- Link to the external CSS file for styling -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Load JavaScript file to fetch and display visitor count -->
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- ===========================
+       HEADER SECTION
+       =========================== -->
+  <header class="site-header">
+    <div class="container header-content">
+      <div>
+        <!-- Your name and tagline -->
+        <h1>Joel George</h1>
+        <p class="tagline">Final Year Computing Student | Cloud & AI Enthusiast</p>
+
+        <!-- Quick contact details displayed in header -->
+        <div class="header-contact">
+          <span>Email: <a href="mailto:jkgeorge252@gmail.com">jkgeorge252@gmail.com</a></span>
+          <span>Phone: 0892492820</span>
+          <span>Location: Swords, Co. Dublin</span>
+          <span>GitHub: <a href="https://github.com/JoGe252" target="_blank">JoGe252</a></span>
+          <span>LinkedIn: <a href="https://www.linkedin.com/in/joel-george-232a961a3/" target="_blank">joel-george-232a961a3</a></span>
+        </div>
+      </div>
+
+      <!-- Download CV -->
+      <a href="./Joel-George-CV.pdf" class="btn-download" download="Joel-George-CV.pdf">
+      Download CV (PDF)
+      </a>
+
+      <!-- Visitor counter box linked to AWS backend -->
+      <div class="visitor-box">
+        <span class="visitor-label">Visitors</span>
+        <span id="visitor-count" class="visitor-number">—</span>
+      </div>
+
+      <!--Dark mode toggle -->
+      <button id="theme-toggle" class="theme-toggle">Dark Mode</button>
+    </div>
+  </header>
+
+  <!-- ===========================
+       MAIN CONTENT SECTION
+       =========================== -->
+  <main class="container">
+
+    <!-- === About Section === -->
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>
+        As a final year Computing student, I'm driven by my deep interest in cloud computing, AI, and emerging technologies.
+        I enjoy exploring how innovative tech can improve efficiency and user experiences. I'm eager to begin my career in
+        IT, software, or cloud infrastructure, where I can continue learning and make a real impact.
+      </p>
+    </section>
+
+    <!-- === Skills Section === -->
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <!-- Grid layout for multiple skill categories -->
+      <div class="skill-grid">
+        <!-- Programming and Development Skills -->
+        <div>
+          <h3>Programming & Development</h3>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Kotlin</li>
+            <li>XML</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Web Framework Development</li>
+            <li>GUI & Rich Web Applications</li>
+          </ul>
+        </div>
+
+        <!-- Software Tools -->
+        <div>
+          <h3>Software & Tools</h3>
+          <ul>
+            <li>PyCharm</li>
+            <li>IntelliJ IDEA</li>
+            <li>Visual Studio Code</li>
+            <li>Android Studio</li>
+            <li>Docker</li>
+            <li>GitHub</li>
+            <li>Overleaf</li>
+            <li>Trello</li>
+          </ul>
+        </div>
+
+        <!-- Core Concepts -->
+        <div>
+          <h3>Concepts & Methodologies</h3>
+          <ul>
+            <li>Object-Oriented Programming (OOP)</li>
+            <li>OOAD & OODP</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Network Distributed Computing (NDC)</li>
+            <li>Algorithm Derivation</li>
+            <li>Data Analytics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- === Work Experience Section === -->
+    <section id="experience" class="card">
+      <h2>Work Experience</h2>
+      <!-- Each job/experience entry -->
+      <div class="item">
+        <div class="item-header">
+          <h3>Sales Co-Worker</h3>
+          <span class="item-meta">IKEA, St Margaret's Rd, Balcurris, Co. Dublin | Feb 2025 - Present</span>
+        </div>
+        <ul>
+          <li>Provide friendly, knowledgeable customer service to help customers find the right home furnishing solutions.</li>
+          <li>Organise and restock departments to ensure a visually appealing shopping environment.</li>
+          <li>Assist with assembling display furniture, supporting product launches, and achieving commercial goals.</li>
+          <li>Developed strong teamwork, communication, and problem-solving skills aligned with IKEA's values of collaboration and sustainability.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- === Education Section === -->
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <div class="item">
+        <div class="item-header">
+          <h3>Bachelor of Science in Computing (Information Technology)</h3>
+          <span class="item-meta">Technological University Dublin, Blanchardstown | Expected May 2026</span>
+        </div>
+        <p>
+          Relevant modules: Cloud Computing, Networking, Software Development, Databases, Web Applications, and Emerging Technologies.
+        </p>
+      </div>
+    </section>
+
+    <!-- === Projects Section === -->
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+
+      <!-- Cloud Resume Project -->
+      <div class="item">
+        <div class="item-header">
+          <h3>Cloud Resume Challenge (AWS)</h3>
+          <span class="item-meta">Final Year Individual Project</span>
+        </div>
+        <ul>
+          <li>Building a personal cloud-hosted resume using AWS S3, Lambda, API Gateway, and DynamoDB.</li>
+          <li>Implements a serverless architecture to demonstrate cloud deployment and automation skills.</li>
+        </ul>
+      </div>
+
+      <!-- Huffman Code Project -->
+      <div class="item">
+        <div class="item-header">
+          <h3>Huffman Code Assignment</h3>
+          <span class="item-meta">GitHub Repository</span>
+        </div>
+        <p><a href="https://github.com/JoGe252/Data-Structures---Algorithms/tree/main/Major%20Assignment%20B00118121" target="_blank">View Project</a></p>
+      </div>
+
+      <!-- Peer-to-Peer Project -->
+      <div class="item">
+        <div class="item-header">
+          <h3>Peer-to-Peer Remote Management Tool</h3>
+          <span class="item-meta">GitHub Repository</span>
+        </div>
+        <p><a href="https://github.com/JoGe252/NDC/tree/main/Assignment%201%20-%20B00118121" target="_blank">View Project</a></p>
+      </div>
+    </section>
+
+    <!-- === Contact Section === -->
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+
+      <p>Email: <a href="mailto:jkgeorge252@gmail.com">jkgeorge252@gmail.com</a></p>
+      <p>Phone: 0892492820</p>
+      <p>GitHub: <a href="https://github.com/JoGe252" target="_blank">github.com/JoGe252</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/joel-george-232a961a3/" target="_blank">linkedin.com/in/joel-george-232a961a3</a></p>
+
+      <hr />
+
+      <!-- === Contact Me Form === -->
+      <h3>Send Me a Message</h3>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" maxlength="1000" required></textarea>
+          <p id="message-counter">0 / 1000</p>
+        </div>
+
+        <!-- Changed button text (no longer prototype) -->
+        <button type="submit" id="submit-btn">Send Message</button>
+      </form>
+
+      <p class="form-feedback" id="form-feedback"></p>
+    </section>
+  </main>
+
+  <!-- ===========================
+       FOOTER SECTION
+       =========================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Joel George. Built as part of the AWS Cloud Resume.</small>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top">↑</button>
+
+</body>
+</html>
